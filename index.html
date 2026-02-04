@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Valentine 💜</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="overlay"></div>
+
+<div class="container">
+
+<div id="start" class="screen active">
+<h1>Will You Be My Valentine? 💜</h1>
+<button onclick="yes()">Yes 😍</button>
+<button id="noBtn">No 🙃</button>
+</div>
+
+<div id="no" class="screen">
+<h2>I don’t accept No as an Answer 😤</h2>
+<button onclick="go('start')">Go Back</button>
+</div>
+
+<div id="gift" class="screen">
+<h2>Choose a Gift 🎁</h2>
+<div class="gifts">
+<div class="gift" onclick="go('music')">🎵 Music</div>
+<div class="gift" onclick="go('flowers')">🌻 Flowers</div>
+<div class="gift" onclick="go('letter')">💌 Love Letter</div>
+</div>
+</div>
+
+<div id="music" class="screen">
+<h2>Birds of a Feather 🎶</h2>
+<button onclick="go('gift')">Go Back</button>
+</div>
+
+<div id="flowers" class="screen">
+<h2>Got This For You 🌻🧁</h2>
+<button onclick="go('gift')">Go Back</button>
+</div>
+
+<div id="letter" class="screen">
+<div class="message">
+In your eyes, I have found a home where my soul finally feels at rest.
+Every moment spent with you is a beautiful reminder that true happiness exists,
+and I am so grateful to walk this path by your side. You are the melody that
+my heart beats to and the light that guides me through every storm. Thank you
+for loving me so completely and for making even the simplest days feel like a
+dream come true. I love you more than words could ever express, now and for
+all the days to come.
+</div>
+<button onclick="go('gift')">Go Back</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
